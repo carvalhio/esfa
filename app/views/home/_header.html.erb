@@ -1,18 +1,29 @@
-<div class="row">
-<%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 5px; margin-left: 50px; width: 250px;')%>
+
+
+<link href="assets/stylesheets/style.css" rel="stylesheet">
+
+<div class="parent">
+      <div>
+        <%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 20px; margin-left: 150px; width: 200px; padding: 15px;')%>
+      </div>
+      <div>
+        <%= image_tag('logos/sas.png', alt: 'Description', style: 'display: block; margin: 20px; width: 200px; padding: 15px;')%>
+      </div>
 </div>
 
-<div class="logo">
-
-</div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+        <li>
+          <%= image_tag('icons/home.ico', style: 'width: 20px; ') %>
+        </li>      
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"> A ESCOLA</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">INFANTIL</a>
         </li>
@@ -25,17 +36,10 @@
         <li class="nav-item">
           <a class="nav-link active" ria-current="page" href="#">CURSINHO</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active" ria-current="page" href="#">FOTOS</a>
         </li>
+        
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="O que procura?" aria-label="Search">

@@ -1,0 +1,23 @@
+.parent{
+
+    display:flex;
+    
+    gap: 5px;
+    
+}
+
+
+img_border{
+    border-radius: 50%;
+}
+
+.container_img {
+    
+    width: 1000px;
+    height: 100px;
+}
+
+@font-face {
+    font-family: 'BebasNeue Regular';
+    src: url('/fonts/BebasNeueRegular.otf')
+ }
