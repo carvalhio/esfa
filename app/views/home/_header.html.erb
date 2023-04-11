@@ -9,42 +9,34 @@
       <div>
         <%= image_tag('logos/sas.png', alt: 'Description', style: 'display: block; margin: 20px; width: 200px; padding: 15px;')%>
       </div>
+      <div>
+        <form class="d-flex" role="search">
+          <input  type="search" placeholder="O que procura?" >
+          <button class="button" type="submit" >Buscar</button>
+        </form>
+      </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+<div class="navbar navbar-custom"  >
+    <div class="navbar-brand">
+          
         <li>
-          <%= image_tag('icons/home.ico', style: 'width: 20px; ') %>
-        </li>      
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"> A ESCOLA</a>
+          <a class="navbar-text"  href="#"> A ESCOLA</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">INFANTIL</a>
+        <li>
+          <a class="navbar-text"  href="#">INFANTIL</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" ria-current="page" href="#">FUNDAMENTAL I</a>
+        <li>
+          <a class="navbar-text" href="#">FUNDAMENTAL I</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" ria-current="page" href="#">FUNDAMENTAL II</a>
+        <li>
+          <a class="navbar-text"  href="#">FUNDAMENTAL II</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" ria-current="page" href="#">CURSINHO</a>
+        <li>
+          <a class="navbar-text"  href="#">CURSINHO</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" ria-current="page" href="#">FOTOS</a>
+        <li>
+          <a class="navbar-text"  href="#">FOTOS</a>
         </li>
-        
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="O que procura?" aria-label="Search">
-        <button class="btn btn-success" type="submit">Buscar</button>
-      </form>
     </div>
-  </div>
-</nav>
+</div>
