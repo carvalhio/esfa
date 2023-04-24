@@ -112,12 +112,12 @@ img_border{
 
 
 .first-navbar {
-    background-color: #c9c8c6; 
+    background-color: #e29d13; 
+    color: #11101b;
     font-size: 17px;
     padding: auto;
     box-sizing: border-box;
-    text-decoration: none;
-    text-decoration-style: none;
+    display: inline;
 }
 
 
@@ -187,7 +187,7 @@ ul{
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
@@ -207,7 +207,7 @@ ul{
 }
 .footer-col ul li a{
 	font-size: 16px;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
@@ -249,4 +249,34 @@ ul{
 }
 }
 
- 
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+

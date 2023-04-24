@@ -1,0 +1,298 @@
+<div style:align="center">
+
+<%= form_with(model: registration) do |form| %>
+  <% if registration.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+        <% registration.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Nome, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :Sobrenome, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :Curso, style: "display: block" %>
+    <%= form.text_field :grade %>
+  </div>
+
+  <div>
+    <%= form.label :Idade, style: "display: block" %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :Série, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :Gênero, style: "display: block" %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div>
+    <%= form.label :Nascimento, style: "display: block" %>
+    <%= form.date_field :born %>
+  </div>
+
+  <div>
+    <%= form.label :Nacionalidade, style: "display: block" %>
+    <%= form.text_field :nationality %>
+  </div>
+
+  <div>
+    <%= form.label :Naturalidade, style: "display: block" %>
+    <%= form.text_field :naturalness %>
+  </div>
+
+  <div>
+    <%= form.label :Religião, style: "display: block" %>
+    <%= form.text_field :relegion %>
+  </div>
+
+  <div>
+    <%= form.label :Endereço_residencial, style: "display: block" %>
+    <%= form.text_field :home_address %>
+  </div>
+
+  <div>
+    <%= form.label :Cidade, style: "display: block" %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div>
+    <%= form.label :Bairro, style: "display: block" %>
+    <%= form.text_field :district %>
+  </div>
+
+  <div>
+    <%= form.label :CEP, style: "display: block" %>
+    <%= form.text_field :cep %>
+  </div>
+
+  <div>
+    <%= form.label :Telefone, style: "display: block" %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :id, style: "display: block" %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div>
+    <%= form.label :Orgão_expedidor, style: "display: block" %>
+    <%= form.text_field :issuing_body %>
+  </div>
+
+  <div>
+    <%= form.label :Estado, style: "display: block" %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div>
+    <%= form.label :Patologia, style: "display: block" %>
+    <%= form.text_field :pathology %>
+  </div>
+
+  <div>
+    <%= form.label :Medicamento, style: "display: block" %>
+    <%= form.text_field :remedy %>
+  </div>
+
+  <div>
+    <%= form.label :Plano_de_saúde, style: "display: block" %>
+    <%= form.text_field :insurance %>
+  </div>
+
+  <div>
+    <%= form.label :Tipo_sanguíneo, style: "display: block" %>
+    <%= form.text_field :bood_type %>
+  </div>
+
+  <div>
+    <%= form.label :Fator_rh, style: "display: block" %>
+    <%= form.text_field :rh_factor %>
+  </div>
+
+  <div>
+    <%= form.label :Telefone_de_emergência, style: "display: block" %>
+    <%= form.number_field :emergency_phone %>
+  </div>
+  <div>
+          <h3> Responsável Financeiro </h3>
+  </div>
+
+  <div>
+    <%= form.label :financial_name, style: "display: block" %>
+    <%= form.text_field :financial_name %>
+  </div>
+
+  <div>
+    <%= form.label :financial_city, style: "display: block" %>
+    <%= form.text_field :financial_city %>
+  </div>
+
+  <div>
+    <%= form.label :financial_phone, style: "display: block" %>
+    <%= form.text_field :financial_phone %>
+  </div>
+
+  <div>
+    <%= form.label :financial_address, style: "display: block" %>
+    <%= form.text_field :financial_address %>
+  </div>
+
+  <div>
+    <%= form.label :financial_job_local, style: "display: block" %>
+    <%= form.text_field :financial_job_local %>
+  </div>
+
+  <div>
+    <%= form.label :financial_occupation, style: "display: block" %>
+    <%= form.text_field :financial_occupation %>
+  </div>
+
+  <div>
+    <%= form.label :financial_cellphone, style: "display: block" %>
+    <%= form.text_field :financial_cellphone %>
+  </div>
+
+  <div>
+    <%= form.label :financial_income, style: "display: block" %>
+    <%= form.text_field :financial_income %>
+  </div>
+
+  <div>
+    <%= form.label :financial_email, style: "display: block" %>
+    <%= form.text_field :financial_email %>
+  </div>
+
+  <div>
+    <%= form.label :financial_degree_kinship, style: "display: block" %>
+    <%= form.text_field :financial_degree_kinship %>
+  </div>
+
+  <div>
+    <%= form.label :father_name, style: "display: block" %>
+    <%= form.text_field :father_name %>
+  </div>
+
+  <div>
+    <%= form.label :father_city, style: "display: block" %>
+    <%= form.text_field :father_city %>
+  </div>
+
+  <div>
+    <%= form.label :father_phone, style: "display: block" %>
+    <%= form.text_field :father_phone %>
+  </div>
+
+  <div>
+    <%= form.label :father_adress, style: "display: block" %>
+    <%= form.text_field :father_adress %>
+  </div>
+
+  <div>
+    <%= form.label :father_job_local, style: "display: block" %>
+    <%= form.text_field :father_job_local %>
+  </div>
+
+  <div>
+    <%= form.label :father_occupation, style: "display: block" %>
+    <%= form.text_field :father_occupation %>
+  </div>
+
+  <div>
+    <%= form.label :father_salary, style: "display: block" %>
+    <%= form.text_field :father_salary %>
+  </div>
+
+  <div>
+    <%= form.label :father_cellphone, style: "display: block" %>
+    <%= form.text_field :father_cellphone %>
+  </div>
+
+  <div>
+    <%= form.label :father_born, style: "display: block" %>
+    <%= form.date_field :father_born %>
+  </div>
+
+  <div>
+    <%= form.label :father_email, style: "display: block" %>
+    <%= form.text_field :father_email %>
+  </div>
+
+  <div>
+    <%= form.label :mother_name, style: "display: block" %>
+    <%= form.text_field :mother_name %>
+  </div>
+
+  <div>
+    <%= form.label :mother_city, style: "display: block" %>
+    <%= form.text_field :mother_city %>
+  </div>
+
+  <div>
+    <%= form.label :mother_phone, style: "display: block" %>
+    <%= form.text_field :mother_phone %>
+  </div>
+
+  <div>
+    <%= form.label :mother_address, style: "display: block" %>
+    <%= form.text_field :mother_address %>
+  </div>
+
+  <div>
+    <%= form.label :mother_occupation, style: "display: block" %>
+    <%= form.text_field :mother_occupation %>
+  </div>
+
+  <div>
+    <%= form.label :mother_salary, style: "display: block" %>
+    <%= form.text_field :mother_salary %>
+  </div>
+
+  <div>
+    <%= form.label :mother_commercial_phone, style: "display: block" %>
+    <%= form.text_field :mother_commercial_phone %>
+  </div>
+
+  <div>
+    <%= form.label :mother_cellphone, style: "display: block" %>
+    <%= form.text_field :mother_cellphone %>
+  </div>
+
+  <div>
+    <%= form.label :mother_borndate, style: "display: block" %>
+    <%= form.date_field :mother_borndate %>
+  </div>
+
+  <div>
+    <%= form.label :mother_email, style: "display: block" %>
+    <%= form.text_field :mother_email %>
+  </div>
+
+  <div>
+    <%= form.label :marital_status, style: "display: block" %>
+    <%= form.text_field :marital_status %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>
