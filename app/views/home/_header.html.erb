@@ -1,13 +1,19 @@
-
-
-<link href="assets/stylesheets/style.css" rel="stylesheet">
+<div class="first-navbar">
+		<div>
+			<ul>
+				
+					<li link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-book"><a href="home/supplies"> Listas de Materiais 2023  </a></li>
+				
+			</ul>	
+		</div>
+</div>
 
 <div class="parent">
       <div>
-        <%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 20px; margin-left: 150px; width: 200px; padding: 15px;')%>
+        <a href="#"> <%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 20px; margin-left: 150px; width: 200px; padding: 15px;')%> </a>
       </div>
       <div>
-        <%= image_tag('logos/sas.png', alt: 'Description', style: 'display: block; margin: 20px; width: 200px; padding: 15px;')%>
+       <a href="https://saseducacao.com.br/" > <%= image_tag('logos/sas.png', alt: 'Description', style: 'display: block; margin: 20px; width: 200px; padding: 15px;')%> </a>
       </div>
       <div>
         <form class="d-flex" role="search">
@@ -17,26 +23,37 @@
       </div>
 </div>
 
-<div class="navbar navbar-custom"  >
-    <div class="navbar-brand">
-          
-        <li>
-          <a class="navbar-text"  href="#"> A ESCOLA</a>
-        </li>
-        <li>
-          <a class="navbar-text"  href="#">INFANTIL</a>
-        </li>
-        <li>
-          <a class="navbar-text" href="#">FUNDAMENTAL I</a>
-        </li>
-        <li>
-          <a class="navbar-text"  href="#">FUNDAMENTAL II</a>
-        </li>
-        <li>
-          <a class="navbar-text"  href="#">CURSINHO</a>
-        </li>
-        <li>
-          <a class="navbar-text"  href="#">FOTOS</a>
-        </li>
-    </div>
-</div>
+
+  <header>
+          <div class="logo">ESFA</div>
+          <div class="hamburguer">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </div>
+          <nav class="nav-bar">
+              <ul>
+                  <li>
+                      <a href="#" class="active">Início</a>
+                  </li>
+                  <li>
+                      <a href="#" >A Escola</a>
+                  </li>
+                  <li>
+                      <a href="" >Fundamental I</a>
+                  </li>
+                  <li>
+                      <a href="" >Fundamental II</a>
+                  </li>
+                  <li>
+                      <a href="" >SAS</a>
+                  </li>
+                  <li>
+                      <a href="" >Fotos</a>
+                  </li>
+                  <li>
+                      <a href="">Sobre</a>
+                  </li>
+              </ul>
+          </nav>
+    </header>

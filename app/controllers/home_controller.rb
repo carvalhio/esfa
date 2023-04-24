@@ -5,5 +5,7 @@ class HomeController < ApplicationController
   def about
   end
 
+  def supplies
+  end
   
 end
