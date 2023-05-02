@@ -1,10 +1,30 @@
 
+<div class="py-2" style="background: rgb(248,172,35);
+background: radial-gradient(circle, rgba(248,172,35,1) 0%, rgba(118,73,26,1) 100%);" align="right">
+      <div class="container">
+
+        <div>
+			<div >
+                <a href="#" class="mr-3" style="color: #FFFFFF;">3611-1254</a>
+                <a href="#" class="mr-3" style="color: #FFFFFF;">fale@esfanet.com.br</a> 
+                
+                <a href="https://www.facebook.com/esfaoficial"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/esfasobralce/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+			</div>           
+        </div>
+      </div>
+</div>
+
 <div class="parent">
       <div>
-        <a href="#"> <%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 20px; margin-left: 150px; width: 200px; padding: 15px;')%> </a>
+          <%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 20px; margin-left: 150px; width: 200px; padding: 15px;')%>
       </div>
       <div>
        <a href="https://saseducacao.com.br/" > <%= image_tag('logos/sas.png', alt: 'Description', style: 'display: block; margin: 20px; width: 200px; padding: 15px;')%> </a>
+      </div>
+      <div>
+       <a href="https://siga.activesoft.com.br/login/" > <%= image_tag('logos/activesoft.png', alt: 'Description', style: 'display: block; margin: 20px; width: 200px; padding: 15px;')%> </a>
       </div>
       <div>
         <form class="d-flex" role="search">
@@ -14,9 +34,12 @@
       </div>
 </div>
 
-
   <header>
-          <div class="logo"><a> <%= image_tag('logos/logo3.png', alt: 'Description', style: 'display: block; margin: 20px; width: 100px; padding: 15px;')%> </a></div>
+          <div class="logo">
+            <a>
+                ESFA
+            </a>
+          </div>
           <div class="hamburguer">
               <div class="line"></div>
               <div class="line"></div>
@@ -27,8 +50,8 @@
                   <li>
                       <a href="#" class="active">Início</a>
                   </li>
-                  <li>
-                      <a href="#" >A Escola</a>
+                  <li class="nav-item">
+                      <%= link_to "A Escola", home_about_path, class:"nav-link" %>
                   </li>
                   <li>
                       <a href="" >Fundamental I</a>
@@ -42,11 +65,6 @@
                   <li>
                       <a href="" >Fotos</a>
                   </li>
-                  <li>
-                      <a href="">Sobre</a>
-                  </li>
-
-                 
                 </div>
               </ul>
           </nav>
